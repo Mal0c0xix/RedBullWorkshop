@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_reservation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="comind.fr.redbullworks.activity.ReservationActivity"
+    tools:showIn="@layout/activity_reservation">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_reservation_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reservation_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reservation_username"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_reservation_user_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_reservation_username">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reservation_mail_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reservation_usermail"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_reservation_userphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_reservation_user_mail">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/reservation_userphone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reservation_userphone"
+            android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/startdate_picker_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/datepicker_startdate_label_text"
+        android:gravity="center_vertical"
+        android:layout_below="@id/layout_reservation_userphone"/>
+
+    <ImageView
+        android:id="@+id/startdate_picker_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/layout_reservation_userphone"
+        android:layout_toEndOf="@id/startdate_picker_label"
+        android:src="@drawable/ic_date_range_black_24dp"
+        android:contentDescription="@string/datepicker_description"/>
+
+    <TextView
+        android:id="@+id/enddate_picker_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/startdate_picker_label"
+        android:text="@string/reservation_enddate_label"/>
+
+    <ImageView
+        android:id="@+id/reservation_enddate_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/startdate_picker_label"
+        android:layout_toEndOf="@id/enddate_picker_label"
+        android:src="@drawable/ic_date_range_black_24dp"
+        android:contentDescription="@string/enddate_description"/>
+
+    <Button
+        android:id="@+id/reservation_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/reservation_button_text"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

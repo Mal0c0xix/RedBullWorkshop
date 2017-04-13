@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f2f2"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/command_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/command_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/user_table_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:text="@string/command_user_table_label"
+            android:textSize="17sp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/user_table_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            app:np_wrapSelectorWheel="true"
+            app:np_min="1"
+            app:np_max="10"
+            app:np_textSize="20sp"
+            app:np_dividerColor="@color/colorAccent"
+            app:np_orientation="horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/user_can_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/command_user_cans_label"
+            android:textSize="17sp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/user_can_picker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            app:np_orientation="horizontal"
+            app:np_min="1"
+            app:np_max="30"
+            app:np_textSize="20sp"
+            app:np_dividerColor="@color/colorAccent"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

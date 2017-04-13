@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">RedBullWorks</string>
+
+    <!-- Command Dialog Strings -->
+    <string name="command_title">Commander une Red Bull</string>
+    <string name="command_user_table_label">Entrez le numéro de votre table :</string>
+    <string name="command_user_cans_label">Nombre de cannettes :</string>
+
+    <!-- Reservation Strings-->
+    <string name="title_activity_reservation">ReservationActivity</string>
+    <string name="reservation_username">Entrez vos prénoms et noms</string>
+    <string name="reservation_button_text">Réserver</string>
+    <string name="reservation_usermail">Entrez votre adresse mail</string>
+    <string name="reservation_userphone">Entrez votre numéro de téléphone</string>
+    <string name="datepicker_description">Start Picker icon</string>
+    <string name="datepicker_startdate_label_text">choisir une date de début :</string>
+    <string name="reservation_title">Reservation</string>
+    <string name="datepicker_title">Choisissez une Date</string>
+    <string name="reservation_enddate_label">Choisir une date de fin : </string>
+    <string name="enddate_description">End Picker Icon</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Navigation Drawer Strings-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="profileText">Prénom</string>
+    <string name="profileMail">User\'s Mail</string>
+    <string name="nav_home_title">Home</string>
+    <string name="nav_commands_title">Mes commandes</string>
+    <string name="nav_reservations_title">Mes réservations</string>
+    <string name="nav_profile_title">Mon profil</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="profile_user_level_label">Niveau actuel :</string>
+    <string name="profile_user_advantages_label">Avantages :</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="facebook_sign_in">Se connecter avec Facebook</string>
+</resources>
